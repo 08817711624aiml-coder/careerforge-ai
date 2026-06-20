@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "JobApplication": {
+      "title": "JobApplication",
+      "description": "User tracked active job application",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Authenticated user's uid"
+        },
+        "companyName": {
+          "type": "string",
+          "description": "Name of target company"
+        },
+        "roleTitle": {
+          "type": "string",
+          "description": "Target job title / designation"
+        },
+        "appliedDate": {
+          "type": "string",
+          "description": "ISO format date of application"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["applied", "interviewing", "offered", "rejected"],
+          "description": "Pipeline stage of candidate"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Recruiter callback points, next action lists"
+        },
+        "skillsRequired": {
+          "type": "array",
+          "description": "Matched checklist of required core stacks"
+        }
+      },
+      "required": ["userId", "companyName", "roleTitle", "appliedDate", "status"]
+    }
+  },
+  "firestore": {
+    "/applications/{applicationId}": {
+      "schema": "JobApplication",
+      "description": "Stores user-specific tracked job positions"
+    }
+  }
+}

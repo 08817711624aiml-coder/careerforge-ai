@@ -1,0 +1,6 @@
+{
+  "name": "Career Forge AI",
+  "description": "An AI placement coach to analyze resumes and LinkedIn profiles, generate personalized career roadmaps, discover target companies, and track job applications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
