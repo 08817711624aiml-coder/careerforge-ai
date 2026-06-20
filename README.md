@@ -1,20 +1,82 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+ # CareerForge AI
 
-# Run and deploy your AI Studio app
+An AI-powered career preparation platform designed to help students and job seekers improve their chances of securing internships and entry-level software engineering roles.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/69503fb6-6d45-45c8-8bf4-e8d9258b2248
+* Resume analysis and feedback
+* AI-driven skill assessment
+* Career readiness evaluation
+* Project and portfolio recommendations
+* Personalized improvement suggestions
+* Interactive dashboard for career tracking
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+### Frontend
 
+* React
+* TypeScript
+* Vite
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Backend
+
+* Node.js
+* TypeScript
+
+### Database & Services
+
+* Firebase
+* Firestore
+
+### AI
+
+* Google Gemini API
+
+## Project Structure
+
+```text
+src/            Frontend application
+assets/         Static assets
+server.ts       Backend server
+dist/           Production build
+```
+
+## Getting Started
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Objectives
+
+The goal of CareerForge AI is to provide students with actionable insights into their career readiness by combining AI-powered analysis with structured feedback and recommendations.
+
+## Future Improvements
+
+* Company-specific interview preparation
+* Resume scoring engine
+* ATS compatibility analysis
+* Internship recommendation system
+* Behavioral interview coaching
+* Progress tracking and analytics
+
+## Author
+
+Lakshay
+
+Engineering Student | Software Developer | AI Enthusiast
